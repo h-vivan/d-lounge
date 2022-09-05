@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="icon_menu">
+        <path data-name="사각형 2" transform="translate(0 5)" style="fill:#1e1e1e" d="M0 0h24v2H0z"/>
+        <path data-name="사각형 3" transform="translate(0 17)" style="fill:#1e1e1e" d="M0 0h24v2H0z"/>
+    </g>
+    <path data-name="사각형 10" style="fill:transparent" d="M0 0h24v24H0z"/>
+</svg>

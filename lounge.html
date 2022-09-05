@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+	<meta property="og:title" content="델리오 라운지"/>
+	<meta property="og:description" content="델리오 회원이라면 누구나 이용 가능!
+	가상자산 예치 상담, 위클리아카데미, 가상자산 행사 대관 등 서비스 제공" />
+	<meta property="og:image" content="images/og_image.png"/>
+	<meta property="og:image:width" content="500">
+	<meta property="og:image:height" content="500">
+	<meta property="og:url" content="https://lounge.delio.io/dev/"/>
+
+	<meta name="Subject" content="델리오 라운지">
+	<meta name="author" content="델리오 라운지">
+	<meta name="publisher" content="델리오 라운지">
+	<meta name="description" content="델리오 가상자산 예치 상담, 위클리아카데미, 가상자산 행사 대관 등 서비스 제공">
+	<meta name="keywords" content="델리오, DELIO, 델리오라운지, DELIOLOUNGE, 델리오PB센터, 크립토, 네트워킹, 블록체인네트워킹, 코인네트워킹, 코인정보, 델리오위클리아카데미, 경제스터디, 스터디, 대관, 행사, 선릉역대관, 강남대관, 행사대관, 크립토행사, 코인행사대관, 크립토금융,크립토뱅크,암호화폐금융서비스,장소대관,서울대관,공간대관,공유라운지,공유오피스">
+
+	<meta name="naver-site-verification" content="c6b21717b79c2d4cc08771c664ddbc2697d51b1d"/>
+	<meta name="google-site-verification" content="CaFO4tcNzYSUNLlqmPzx92d0SkASNf6P2XTaslk0-_o" />
+
+	<title>델리오 라운지</title>
+	<link rel="icon" href="image/favicon.ico">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto+Serif:wght@200;300;500&family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+
+<body>
+	<main id="main" v-cloak>
+
+		<!-- menu -->
+		<header class="header" :class="{ft_blk : info.curNo === (info.conLen-1)}">
+			<div class="logo">
+				<figure>
+					<img :src="info.curNo === (info.conLen-1) ? 'image/lounge_logo_blk.svg' : 'image/lounge_logo.svg'" alt="delio lounge">
+				</figure>
+			</div>
+			<nav class="nav flex_ac_jsb">
+				<div class="menus flex_ac_jsb">
+					<button class="btn_menu" :class="{on: info.curNo===0}" @click="moveShow(0)">델리오 라운지</button>
+					<button class="btn_menu" :class="{on: info.curNo===1}" @click="moveShow(1)">고객상담</button>
+					<button class="btn_menu" :class="{on: info.curNo===2}" @click="moveShow(2)">교육 · 컨퍼런스</button>
+					<button class="btn_menu" :class="{on: info.curNo===3}" @click="moveShow(3)">대관안내</button>
+					<button class="btn_menu" :class="{on: info.curNo===4}" @click="moveShow(4)">회원전용 서비스</button>
+					<button class="btn_menu" :class="{on: info.curNo===5}" @click="moveShow(5)">찾아오는 길</button>
+				</div>
+				<div class="langs flex_ac_jsb">
+					<button class="btn_lang" :class="{on: info.lan===1}" @click="changeLan(1)">KR</button>
+					<button class="btn_lang" :class="{on: info.lan===2}" @click="changeLan(2)">EN</button>
+				</div>
+			</nav>
+		</header>
+
+		<!-- side dot -->
+		<aside class="side_dot" :class="{ft_blk : info.curNo === (info.conLen-1)}">
+			<button class="btn_dot" :class="{on: info.curNo===0}" @click="moveShow(0)"></button>
+			<button class="btn_dot" :class="{on: info.curNo===1}" @click="moveShow(1)"></button>
+			<button class="btn_dot" :class="{on: info.curNo===2}" @click="moveShow(2)"></button>
+			<button class="btn_dot" :class="{on: info.curNo===3}" @click="moveShow(3)"></button>
+			<button class="btn_dot" :class="{on: info.curNo===4}" @click="moveShow(4)"></button>
+			<button class="btn_dot" :class="{on: info.curNo===5}" @click="moveShow(5)"></button>
+		</aside>
+
+		<!-- 델리오 홈페이지 -->
+		<a href="https://delio.io/" class="delio_link" :class="{ft_blk : info.curNo === (info.conLen-1)}" target="_blank" noopener noreferrer>델리오 홈페이지 <span>바로가기</span></a>
+
+		<!-- contents -->
+		<div class="container" :style="{top:'-' + info.curNo + '00vh'}">
+			<div class="view_wrap v1" :class="{on: info.curNo===0}">
+				<div class="bgwrap">
+					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===0}" v-for="(list, idx) in info.bg1Urls" :key="idx"></div>
+				</div>
+				<p class="scrolltxt">SCROLL</p>
+				<div class="txtwrap">
+					<p class="title">델리오 라운지</p>
+					<p class="txt">델리오 회원을 위하여 마련된  공간에서<br>다양한  교육세션과 상담 서비스를 만나보세요.</p>
+				</div>
+			</div>
+
+			<div class="view_wrap v2" :class="{on: info.curNo===1}">
+				<div class="bgwrap">
+					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===1}" v-for="(list, idx) in info.bg2Urls" :key="idx"></div>
+				</div>
+				<div class="txtarea">
+					<div class="txtwrap">
+						<p class="title">고객상담</p>
+						<p class="subj">예치, 렌딩에서 뱅크 이자 수익까지!</p>
+						<p class="txt">델리오 서비스를 이용한 투자에 대하여 상담을 받으신 후 현장에서 직접 서비스도 이용해 보세요.</p>
+					</div>
+					<div class="txtwrap">
+						<p class="cmt">ㆍ100% 사전 예약제로 최소 방문 3일 전까지 예약하시기 바랍니다.</p>
+						<p class="cmt">ㆍ예약 신청 시 필수 전달(기재)사항 : 성명, 연락처, 델리오 계정 ID, 방문사유<br>(상품명 지정), 방문 희망일시, 방문자 수</p>
+					</div>
+					<div class="txtwrap flex_ac_jsb">
+						<p class="reser_txt">예약신청</p>
+						<div class="reser_info">
+							<a href="tel:1660-3611" class="tel">1660-3611</a>
+							<a href="mailto:help@delio.io" class="email">help@delio.io</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="view_wrap v3" :class="{on: info.curNo===2}">
+				<div class="bgwrap">
+					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===2}" v-for="(list, idx) in info.bg3Urls" :key="idx"></div>
+				</div>
+				<div class="txtarea">
+					<div class="txtwrap">
+						<p class="title">교육 · 컨퍼런스</p>
+						<p class="subj">어렵게만 느껴지는<br>가상자산 투자의 A부터 Z까지!</p>
+						<p class="txt">델리오가 다양한 프로그램을 통해 여러분의 길잡이가 되어 드립니다.</p>
+					</div>
+					<div class="txtwrap" v-if="info.urls.length>0">
+						<p class="sec_title">참가 모집중인 행사</p>
+						<ul class="noti_box">
+							<li v-for="(list, idx) in info.urls" :key="idx">
+								<a :href="list.url" class="notilink" target="_blank" noopener noreferrer>{{list.title}}</a>
+								<p class="date">{{list.date}}</p>
+							</li>
+						</ul>
+					</div>
+					<div class="txtwrap flex_ac_jsb">
+						<p class="p_txt">프로그램 문의</p>
+						<a href="mailto:event@delio.io" class="p_email">event@delio.io</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="view_wrap v4" :class="{on: info.curNo===3}">
+				<div class="bgwrap">
+					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===3}" v-for="(list, idx) in info.bg4Urls" :key="idx"></div>
+				</div>
+				<div class="txtarea top">
+					<p class="title">대관안내</p>
+					<p class="subj">중요한 행사를 준비 중이신가요?</p>
+					<p class="cmt">지금 바로 델리오 라운지 대관신청 하세요.</p>
+				</div>
+				<div class="txtarea txts">
+					<div class="txtwrap">
+						<p class="txt">델리오 라운지<br>대관 서비스는<br>유료 입니다.</p>
+						<img src="image/icon_01.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<p class="txt">대관 신청 시<br>성명, 연락처, 대관 희망일시,<br>대관 사유, 이용 인원 수는<br>필수 기재사항 입니다.</p>
+						<img src="image/icon_02.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<p class="txt">대관 신청 2주일 전까지<br>이메일을 통해 예약신청 후<br>절차 안내를 받으시기<br>바랍니다.</p>
+						<img src="image/icon_03.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<p class="txt b">예약신청</p>
+						<a href="mailto:event@delio.io" class="p_email">event@delio.io</a>
+						<img src="image/icon_04.svg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="view_wrap v5" :class="{on: info.curNo===4}">
+				<div class="bgwrap">
+					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===4}" v-for="(list, idx) in info.bg5Urls" :key="idx"></div>
+				</div>
+				<div class="txtarea top">
+					<p class="title">회원전용 서비스</p>
+					<p class="subj">커피 한잔을 즐기며 쾌적하게<br>업무할 공간이 필요하시다구요?</p>
+					<p class="cmt">델리오 회원가입 하시고 델리오 라운지를 이용해 보세요.<br>원격 업무에 필수인 Wi-Fi까지 무료로 제공합니다.</p>
+				</div>
+				<div class="txtarea txts">
+					<div class="txtwrap">
+						<p class="txt">델리오 회원가입<br>여부를 확인 후<br>입장이 가능 합니다.</p>
+						<img src="image/icon_05.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<p class="txt">방문자가 몰릴 경우<br>부득이하게 이용이<br>제한될 수 있습니다</p>
+						<img src="image/icon_06.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<p class="txt b">이용문의</p>
+						<a href="tel:1660-3611" class="txt">1660-3611</a>
+						<a href="mailto:help@delio.io" class="p_email">help@delio.io</a>
+						<img src="image/icon_04.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<a href="https://delio.io/registration" target="_blank" noopener noreferrer class="link">
+							<p class="txt b">델리오 회원가입<br>바로가기</p>
+							<img src="image/icon_07.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="view_wrap v6" :class="{on: info.curNo===5}">
+				<div class="txtarea">
+					<p class="title">찾아오는 길</p>
+					<p class="addr">서울특별시 강남구<br>삼성로85길 26 V&S빌딩 1층</p>
+				</div>
+				<div class="maparea">
+					<div class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1240490680225!2d127.05503159999999!3d37.5049923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3a0bb2b4b65%3A0x85652c13782c0ead!2z642466as7Jik!5e0!3m2!1sko!2skr!4v1661487685375!5m2!1sko!2skr" width="2560" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+				<footer class="footer">
+					<a href="https://delio.io/" target="_blank" noopener noreferrer><img src="image/delio_logo.svg" alt="delio"></a>
+					<p class="copyright">© Since 2018, Delio. All rights reserved.</p>
+				</footer>
+			</div>
+		</div>
+
+	</main>
+
+	<script src="js/axios.min.js"></script>
+	<script src="js/vue3.min.js"></script>
+	<script src="js/style.js"></script>
+</body>
+
+</html>

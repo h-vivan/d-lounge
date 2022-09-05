@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <path data-name="사각형 5" style="fill:transparent" d="M0 0h30v30H0z"/>
+    <g data-name="모양 12 복사">
+        <path data-name="모양 6" d="M27.017 2.923H24.6V1.778a1.179 1.179 0 0 0-2.357 0v1.145H18.5V1.778a1.179 1.179 0 0 0-2.357 0v1.145H12.4V1.778a1.179 1.179 0 0 0-2.357 0v1.145H6.3V1.778a1.179 1.179 0 0 0-2.357 0v1.145H1.524A1.25 1.25 0 0 0 .27 4.17v22.863a1.25 1.25 0 0 0 1.254 1.247h25.493a1.25 1.25 0 0 0 1.254-1.247V4.17a1.25 1.25 0 0 0-1.254-1.247zm-1.254 22.864H2.778V9.365h22.985z" transform="translate(.729 .394)" style="fill:#fff"/>
+        <path data-name="모양 12" d="m10.348 18.926 3.252 3.252 6.364-6.364" transform="translate(-.441 -1.138)" style="fill:none;stroke:#fff;stroke-width:2px"/>
+    </g>
+</svg>
