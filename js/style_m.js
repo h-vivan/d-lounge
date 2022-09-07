@@ -11,7 +11,7 @@ const main = {
 
 			bgNo: -1,// 0 = 항상 첫번재 사진부터 보여지게
 			bgTimer: null,
-			bg1Urls: ["image/m/bg_01@2x.webp", "image/m/bg_01-2@2x.webp", "image/m/bg_01-3@2x.webp"],
+			bg1Urls: ["image/m/bg_01-1@2x.webp", "image/m/bg_01-2@2x.webp", "image/m/bg_01-3@2x.webp"],
 			bg2Urls: ["image/m/bg_02@2x.webp"],
 			bg3Urls: ["image/m/bg_03@2x.webp"],
 			bg4Urls: ["image/m/bg_04@2x.webp"],
