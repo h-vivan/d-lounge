@@ -127,7 +127,7 @@ main{height:calc(var(--vh, 1vh) * 100);overflow:hidden;}
 .v3 .noti_box li{display:flex;align-items:center;}
 .v3 .noti_box li+li{margin-top:0.2rem;}
 .v3 .noti_box .notilink{flex:1;line-height:2rem;font-size:1.2rem;color:#eee;letter-spacing:-0.6px;font-weight:300;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
-.v3 .noti_box .date{width:10.2rem;line-height:2rem;font-size:1.2rem;color:#bbb;letter-spacing:-0.6px;font-weight:300;text-align:right;}
+.v3 .noti_box .date{width:11rem;line-height:2rem;font-size:1.2rem;color:#bbb;letter-spacing:-0.6px;font-weight:300;text-align:right;}
 .v3 .txtwrap.flex_ac_jsb{margin-top:1.5rem;padding:0;border-top:none;border-bottom:none;}
 .v3 .txtwrap.flex_ac_jsb .p_txt{line-height:3.2rem;font-size:1.2rem;color:#fff;letter-spacing:-0.6px;font-weight:600;}
 .v3 .txtwrap.flex_ac_jsb .p_email{line-height:3.2rem;font-size:1.2rem;color:#eee;letter-spacing:-0.6px;font-weight:300;}
