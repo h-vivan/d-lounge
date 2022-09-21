@@ -234,7 +234,7 @@ main{height:100vh;overflow:hidden;}
 	.v6 .maparea{bottom:12rem;height:18rem;}
 	.v6 .maps iframe{height:180px;}
 	.v6 .footer{height:12rem;}
-	.v6 .footer a{margin-top:0.5rem;width:7.5rem;}
+	.v6 .footer .im{margin-top:0.5rem;width:7.5rem;}
 	.v6 .footer .copyright{margin-top:0.7rem;}
 	.delio_link.ft_blk{bottom:-1px;z-index:999;}
 	.v6.on .txtarea{top:32vh;}
