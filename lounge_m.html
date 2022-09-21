@@ -8,7 +8,7 @@
 
 	<meta property="og:title" content="델리오 라운지"/>
 	<meta property="og:description" content="델리오 회원이라면 누구나 이용 가능! 가상자산 예치 상담, 위클리아카데미, 가상자산 행사 대관 등 서비스 제공" />
-	<meta property="og:image" content="https://lounge.delio.io/image/og_image.png"/>
+	<meta property="og:image" content="image/og_image.png"/>
 	<meta property="og:image:width" content="500">
 	<meta property="og:image:height" content="500">
 	<meta property="og:url" content="https://lounge.delio.io/"/>
@@ -47,7 +47,7 @@
 					<button class="btn_menu" :class="{on: info.curNo===2}" @click="moveShow(2, true)">교육 / 컨퍼런스</button>
 					<button class="btn_menu" :class="{on: info.curNo===3}" @click="moveShow(3, true)">대관안내</button>
 					<button class="btn_menu" :class="{on: info.curNo===4}" @click="moveShow(4, true)">회원전용 서비스</button>
-					<button class="btn_menu" :class="{on: info.curNo===5}" @click="moveShow(5, true)">찾아오는 길</button>
+					<button class="btn_menu" :class="{on: info.curNo===5}" @click="moveShow(5, true)">오시는 길</button>
 				</div>
 				<!-- <div class="langs">
 					<button class="btn_lang" :class="{on: info.lan===1}" @click="changeLan(1)">KR</button>
@@ -75,8 +75,8 @@
 					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===0}" v-for="(list, idx) in info.bg1Urls" :key="idx"></div>
 				</div>
 				<div class="txtwrap">
-					<p class="title">델리오 라운지</p>
-					<p class="txt">델리오 회원을 위하여 마련된 공간에서<br>다양한 교육세션과 상담 서비스를 만나보세요.</p>
+					<p class="title">꿈을 현실로 만들어 가는<br>델리오 라운지</p>
+					<p class="txt">델리오 라운지는 가상자산의 이해를 돕는<br>다양한 교육 및 전문 상담 서비스부터 편안한 공간도<br>함께 제공하는 복합 비즈니스 공간입니다.</p>
 				</div>
 			</div>
 
@@ -87,15 +87,15 @@
 				<div class="txtarea">
 					<div class="txtwrap">
 						<p class="title">고객상담</p>
-						<p class="subj">예치, 렌딩에서<br>뱅크 이자 수익까지!</p>
-						<p class="txt">델리오 서비스를 이용한 투자에 대하여 상담을 받으신 후 현장에서 직접 서비스도 이용해 보세요.</p>
+						<p class="subj">예치, 렌딩 이용자를 위한<br>상담 서비스</p>
+						<p class="txt">델리오의 예치, 렌딩 등 다양한 서비스를<br>쉽게 이용할 수 있도록 도와주는 고객상담 서비스입니다.<br>사전 예약을 통해 전문가와 1:1 상담을 받아보세요.</p>
 					</div>
 					<div class="txtwrap">
-						<p class="cmt">ㆍ100% 사전 예약제로 최소 방문 3일 전까지 예약하시기<br>바랍니다.</p>
-						<p class="cmt">ㆍ예약 신청 시 필수 전달(기재)사항 :<br>성명, 연락처, 델리오 계정 ID, 방문사유(상품명 지정),<br>방문 희망일시, 방문자 수</p>
+						<p class="cmt">ㆍ고객상담은 100% 사전 예약제로 진행되며, 최소 방문 3일 전까지 예약하시기 바랍니다.</p>
+						<p class="cmt">ㆍ상담 예약 신청 시, 필수 기재 사항을 작성해 주시기 바랍니다.<br>(성명, 연락처, 델리오 ID 계정, 상담 사유_상품명 포함, 상담 희망 일시, 방문 고객 수)</p>
 					</div>
 					<div class="txtwrap flex_ac_jsb">
-						<p class="reser_txt">예약신청</p>
+						<p class="reser_txt">상담 예약 신청</p>
 						<div class="reser_info">
 							<a href="tel:02-6951-2776" class="tel">02-6951-2776</a>
 							<a href="mailto:help@delio.io" class="email">help@delio.io</a>
@@ -111,8 +111,8 @@
 				<div class="txtarea">
 					<div class="txtwrap">
 						<p class="title">교육 · 컨퍼런스</p>
-						<p class="subj">어렵게만 느껴지는 가상자산<br>투자의 A부터 Z까지!</p>
-						<p class="txt">델리오가 다양한 프로그램을 통해 여러분의 길잡이가<br>되어 드립니다.</p>
+						<p class="subj">가상자산의<br>미래와 성장을 이끄는<br>델리오만의 교육·컨퍼런스</p>
+						<p class="txt">새로운 투자 방식으로 떠오르는 가상자산.<br>델리오는 다양한 교육과 컨퍼런스를 개최하여,<br>누구나 쉽게 가상자산을 이해하고 경험하는 자리를<br>지속적으로 만들고 있습니다. </p>
 					</div>
 					<div class="txtwrap" v-if="info.urls.length>0">
 						<p class="sec_title">참가 모집중인 행사</p>
@@ -137,25 +137,26 @@
 				<div class="txtarea">
 					<div class="txtinfo">
 						<p class="title">대관안내</p>
-						<p class="subj">중요한 행사를<br>준비 중이신가요?</p>
-						<p class="cmt">지금 바로 델리오 라운지 대관신청 하세요.</p>
+						<p class="subj">언제나 머물고 싶은 공간<br>델리오 라운지 대관안내</p>
+						<p class="cmt">델리오 라운지는 모두에게 열려 있습니다.<br>델리오 라운지를 이용하고 싶다면 지금 바로 대관 신청하세요.</p>
 					</div>
 					<div class="txtbg">
 						<div class="txtwrap">
 							<img src="image/icon_01.svg" alt="">
-							<p class="txt">델리오 라운지 대관 서비스는 유료 입니다.</p>
+							<p class="txt">델리오 라운지 대관은 유료 서비스입니다.</p>
 						</div>
 						<div class="txtwrap">
 							<img src="image/icon_02.svg" alt="">
-							<p class="txt">대관 신청 시 성명, 연락처, 대관 희망일시,<br>대관 사유, 이용 인원 수는 필수 기재사항 입니다.</p>
+							<p class="txt">대관 신청 시, 필수 기재 사항을 작성해 주시기 바랍니다.<br>
+								(성명, 연락처, 대관 희망 일시, 대관 사유, 이용 인원수)</p>
 						</div>
 						<div class="txtwrap">
 							<img src="image/icon_03.svg" alt="">
-							<p class="txt">대관 신청 2주일 전까지 이메일을 통해 예약신청 후<br>절차 안내를 받으시기 바랍니다.</p>
+							<p class="txt">대관은 사전 예약으로 진행되며,<br>최소 2주일 전까지 이메일을 통해 신청 가능합니다.</p>
 						</div>
 						<div class="txtwrap">
 							<img src="image/icon_04.svg" alt="">
-							<p class="txt b">예약신청</p>
+							<p class="txt b">대관 신청</p>
 							<a href="mailto:event@delio.io" class="p_email">event@delio.io</a>
 						</div>
 					</div>
@@ -169,17 +170,17 @@
 				<div class="txtarea">
 					<div class="txtinfo">
 						<p class="title">회원전용 서비스</p>
-						<p class="subj">커피 한잔을 즐기며 쾌적하게<br>업무할 공간이 필요하시다구요?</p>
-						<p class="cmt">델리오 회원가입 하시고 델리오 라운지를 이용해 보세요.<br>원격 업무에 필수인 Wi-Fi까지 무료로 제공합니다.</p>
+						<p class="subj">델리오 회원을 위한<br>델리오 라운지 회원전용 서비스</p>
+						<p class="cmt">잠시 머물 수 있는 공간이 필요하다면,<br>델리오 회원가입 후 델리오 라운지를 이용해 보세요.<br>원격 업무를 위한 Wi-Fi 서비스도 무료로 제공해 드립니다. </p>
 					</div>
 					<div class="txtbg">
 						<div class="txtwrap">
 							<img src="image/icon_05.svg" alt="">
-							<p class="txt">델리오 회원가입 여부를 확인 후<br>입장이 가능 합니다.</p>
+							<p class="txt">델리오 회원가입 확인 후<br>입장 가능합니다.</p>
 						</div>
 						<div class="txtwrap">
 							<img src="image/icon_06.svg" alt="">
-							<p class="txt">방문자가 몰릴 경우 부득이하게 이용이<br>제한될 수 있습니다</p>
+							<p class="txt">이용 가능 인원 초과 시,<br>입장이 제한될 수 있습니다.</p>
 						</div>
 						<div class="txtwrap">
 							<img src="image/icon_04.svg" alt="">
@@ -199,7 +200,7 @@
 
 			<div class="view_wrap v6" :class="{on: info.curNo===5}">
 				<div class="txtarea">
-					<p class="title">찾아오는 길</p>
+					<p class="title">오시는 길</p>
 					<p class="addr">서울특별시 강남구<br>삼성로85길 26 V&S빌딩 1층</p>
 				</div>
 				<div class="maparea">

@@ -91,8 +91,8 @@ main{height:calc(var(--vh, 1vh) * 100);overflow:hidden;}
 
 .v1 .txtwrap{position:absolute;left:2rem;bottom:calc(var(--vh, 1vh) * 2.8);opacity:0;transition:opacity 0.5s ease 0.4s, bottom 0.6s ease 0.4s;}
 .v1 .txtwrap p{color:#fff;}
-.v1 .txtwrap .title{line-height:4rem;font-size:1.8rem;font-weight:600;letter-spacing:-0.9px;}
-.v1 .txtwrap .txt{margin-top:1px;line-height:2.4rem;font-size:1.5rem;font-weight:300;letter-spacing:-0.75px;}
+.v1 .txtwrap .title{line-height:3rem;font-size:1.8rem;font-weight:600;letter-spacing:-0.9px;}
+.v1 .txtwrap .txt{margin-top:1rem;line-height:2.4rem;font-size:1.5rem;font-weight:300;letter-spacing:-0.75px;}
 .v1.on .txtwrap{opacity:1;bottom:calc(var(--vh, 1vh) * 4.8);}
 
 .view_wrap.v2 .bgwrap .bg{background-image:url(../image/m/bg_02@2x.webp);}
