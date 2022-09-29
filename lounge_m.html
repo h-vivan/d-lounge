@@ -49,10 +49,10 @@
 					<button class="btn_menu" :class="{on: info.curNo===4}" @click="moveShow(4, true)">회원전용 서비스</button>
 					<button class="btn_menu" :class="{on: info.curNo===5}" @click="moveShow(5, true)">오시는 길</button>
 				</div>
-				<!-- <div class="langs">
-					<button class="btn_lang" :class="{on: info.lan===1}" @click="changeLan(1)">KR</button>
-					<button class="btn_lang" :class="{on: info.lan===2}" @click="changeLan(2)">EN</button>
-				</div> -->
+				<div class="langs">
+					<button class="btn_lang on" @click="changeLan(1)">KR</button>
+					<button class="btn_lang" @click="changeLan(2)">EN</button>
+				</div>
 			</nav>
 		</header>
 

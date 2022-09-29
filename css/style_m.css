@@ -1,6 +1,6 @@
 html{overflow:hidden;}
 main{height:calc(var(--vh, 1vh) * 100);overflow:hidden;}
-.header{position:fixed;left:0;top:0;width:100vw;height:6.2rem;background-color:#fff;z-index:99;}
+.header{position:fixed;left:0;top:0;width:100vw;height:6.2rem;background-color:#fff;z-index:100;}
 .header .logo{margin:0 2rem;width:11.8rem;line-height:6rem;}
 .header .menu_btn{padding:1rem;position:absolute;right:1rem;top:0.9rem;width:4.4rem;height:4.4rem;font-size:0;}
 .header .menu_btn img{position:absolute;left:1rem;top:1rem;width:2.4rem;transition:opacity 0.3s ease;}
@@ -195,3 +195,50 @@ main{height:calc(var(--vh, 1vh) * 100);overflow:hidden;}
 .v6.on .txtarea{opacity:1;bottom:calc(var(--vh, 1vh) * 74.2);transition-delay:0.3s;}
 .v6.on .footer{bottom:0;}
 .v6.on.show .maparea{clip-path:circle(80% at 50% 45%);}
+
+
+.en .nav .menus{padding-top:2.3rem;}
+.en .nav .btn_menu{line-height:5.6rem;font-size:3rem;letter-spacing:-1.5px;}
+.en .nav .btn_menu+.btn_menu{margin-top:0.3rem;}
+
+.en .v1 .txtwrap .title{line-height:2.8rem;}
+.en .v1 .txtwrap .txt{line-height:2.2rem;font-size:1.4rem;letter-spacing:-0.7px;}
+
+.en .v2 .txtarea{width:28rem;}
+.en .v2 .title{font-size:1.4rem;letter-spacing:-0.7px;}
+.en .v2 .subj{margin-top:0;line-height:3rem;font-size:2.2rem;letter-spacing:-1.1px;}
+.en .v2 .txt{margin-top:1.2rem;letter-spacing:-0.6px;}
+.en .v2 .reser_txt{line-height:2rem;}
+.en .v2 .txtwrap.flex_ac_jsb{padding-top:0.6rem;padding-right:0.5rem;align-items:flex-start;}
+.en .v2 .txtarea{bottom:calc(var(--vh, 1vh) * 4.8);}
+.en .v2 .tel, .en .v2 .email{line-height:1.9rem;}
+.en .v2 .email::before{top:0.5rem;height:0.8rem;}
+.en .v2 .cmt+.cmt{margin-top:0.8rem;}
+
+.en .v3 .txtarea{bottom:calc(var(--vh, 1vh) * 4.4);}
+.en .v3 .title{font-size:1.4rem;letter-spacing:-0.7px;}
+.en .v3 .subj{line-height:3rem;font-size:2.2rem;letter-spacing:-1.1px;font-family:"Roboto";}
+.en .v3 .txt{margin-top:1.2rem;}
+.en .v3 .txtarea{width:30rem;}
+.en .v3 .txtwrap+.txtwrap{padding-right:0.5rem;}
+.en .v3 .txtwrap.flex_ac_jsb{margin-top:1.8rem;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,0.3);}
+
+.en .v4 .txtarea{bottom:calc(var(--vh, 1vh) * 10)}
+.en .v4 .txtarea .title{font-size:1.4rem;letter-spacing:-0.7px;}
+.en .v4 .txtarea .subj{margin-top:-0.3rem;font-size:2.2rem;letter-spacing: -1.1px;}
+.en .v4 .txtarea .txtwrap .p_email{margin-top:0.3rem;}
+.en .v4 .txtarea .txtbg{margin-top:4.7rem;}
+
+.en .v5 .txtarea{bottom:calc(var(--vh, 1vh) * 12.6);}
+.en .v5 .txtarea .title{font-size:1.4rem;letter-spacing:-0.7px;}
+.en .v5 .txtarea .subj{margin-top:-0.3rem;font-size:2.2rem;letter-spacing:-1.1px;}
+.en .v5 .txtarea .txtbg{margin-top:4.7rem;}
+.en .v5 .txtarea .txtwrap+.txtwrap{margin-top:2.7rem;}
+.en .v5 .txtarea .txtwrap .p_email{padding-left:0.8rem;}
+.en .v5 .txtarea .txtwrap .p_email::before{top:0.5rem;height:1rem;}
+.en .v5 .txtarea .link img{position:relative;left:0.5rem;top:-0.1rem;}
+
+.en .v6 .txtarea{bottom:calc(var(--vh, 1vh) * 68);right:2.1rem;}
+.en .v6.on .txtarea{bottom:calc(var(--vh, 1vh) * 72.5);}
+.en .v6 .title{font-size:1.4rem;letter-spacing:-0.7px;}
+.en .v6 .addr{margin-top:-0.4rem;}

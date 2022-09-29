@@ -64,9 +64,9 @@ hr{display:none;}
 .m_dflex{display:-webkit-flex!important;display:-moz-flex!important;display:-ms-flex!important;display:-o-flex!important;display:flex!important;-webkit-justify-content:center;-moz-justify-content:center;-ms-justify-content:center;-o-justify-content:center;justify-content:center;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;-o-align-items:center;align-items:center;}
 
 /* 가로/세로 가운데 정렬(ie9까지 포함) */
-.m_centerpopbg{position:fixed;left:0;top:0;right:0;bottom:0;z-index:203;text-align:center;background-color:rgba(0,0,0,0.3);z-index:999;}
+/* .m_centerpopbg{position:fixed;left:0;top:0;right:0;bottom:0;text-align:center;background-color:rgba(0,0,0,0.3);z-index:999;}
 .m_centerpopbg:after{content:"";display:inline-block;height:100%;vertical-align:middle;}
-.m_centerpopbg>div{margin:auto;position:relative;display:inline-block;width:20rem;height:20rem;vertical-align:middle;text-align:left;background-color:#fff;}
+.m_centerpopbg>div{margin:auto;position:relative;display:inline-block;width:20rem;height:20rem;vertical-align:middle;text-align:left;background-color:#fff;} */
 
 .m_ibarea{font-size:0;}
 .m_ibarea>*{display:inline-block;vertical-align:top;}

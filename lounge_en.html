@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+	<meta property="og:title" content="Delio Lounge"/>
+	<meta property="og:description" content="Available to every Delio member! Digital asset deposit consulting, Delio Weekly Academy, digital assets seminars, event space for rental, and more." />
+	<meta property="og:image" content="image/og_image.png"/>
+	<meta property="og:image:width" content="500">
+	<meta property="og:image:height" content="500">
+	<meta property="og:url" content="https://lounge.delio.io/"/>
+
+	<meta name="Subject" content="Delio Lounge">
+	<meta name="author" content="Delio Lounge">
+	<meta name="publisher" content="Delio Lounge">
+	<meta name="description" content="Digital asset deposit consulting, Delio Weekly Academy, digital assets seminars, event space for rental, and more.">
+	<meta name="keywords" content="Delio, DELIO, DelioLounge, DELIOLOUNGE, DelioPrivateBankCenter, Crypto, CryptoBank, Networking, BlockchainNetworking, CoinNetworking, CoinInformation, DelioWeeklyAcademy, EconomicStudy, CryptoEducation, SpaceRent, Seminar, SeolleungStationRental, GangnamRental, EventRental, CryptoEvent, CoinEventRental, CryptoFinance, CryptoBank, CryptocurrencyFinancialService, VenueRental, SeoulRental, SpaceRental, SharedLounge, SharedOffice">
+
+	<meta name="naver-site-verification" content="c6b21717b79c2d4cc08771c664ddbc2697d51b1d"/>
+	<meta name="google-site-verification" content="CaFO4tcNzYSUNLlqmPzx92d0SkASNf6P2XTaslk0-_o" />
+
+	<title>Delio Lounge</title>
+	<link rel="icon" href="image/favicon.ico">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto+Serif:wght@200;300;500&family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+
+<body>
+	<main id="main" class="en" v-cloak>
+
+		<!-- menu -->
+		<header class="header" :class="{ft_blk : info.curNo === (info.conLen-1)}">
+			<div class="logo">
+				<figure>
+					<img :src="info.curNo === (info.conLen-1) ? 'image/lounge_logo_blk.svg' : 'image/lounge_logo.svg'" alt="delio lounge">
+				</figure>
+			</div>
+			<nav class="nav flex_ac_jsb">
+				<div class="menus flex_ac_jsb">
+					<button class="btn_menu" :class="{on: info.curNo===0}" @click="moveShow(0)">Delio lounge</button>
+					<button class="btn_menu" :class="{on: info.curNo===1}" @click="moveShow(1)">Customer Service</button>
+					<button class="btn_menu" :class="{on: info.curNo===2}" @click="moveShow(2)">Educational Programs</button>
+					<button class="btn_menu" :class="{on: info.curNo===3}" @click="moveShow(3)">Rental Info</button>
+					<button class="btn_menu" :class="{on: info.curNo===4}" @click="moveShow(4)">Members-Only Services</button>
+					<button class="btn_menu" :class="{on: info.curNo===5}" @click="moveShow(5)">Directions</button>
+				</div>
+				<div class="langs flex_ac_jsb">
+					<button class="btn_lang" @click="changeLan(1)">KR</button>
+					<button class="btn_lang on" @click="changeLan(2)">EN</button>
+				</div>
+			</nav>
+		</header>
+
+		<!-- side dot -->
+		<aside class="side_dot" :class="{ft_blk : info.curNo === (info.conLen-1)}">
+			<button class="btn_dot" :class="{on: info.curNo===0}" @click="moveShow(0)"></button>
+			<button class="btn_dot" :class="{on: info.curNo===1}" @click="moveShow(1)"></button>
+			<button class="btn_dot" :class="{on: info.curNo===2}" @click="moveShow(2)"></button>
+			<button class="btn_dot" :class="{on: info.curNo===3}" @click="moveShow(3)"></button>
+			<button class="btn_dot" :class="{on: info.curNo===4}" @click="moveShow(4)"></button>
+			<button class="btn_dot" :class="{on: info.curNo===5}" @click="moveShow(5)"></button>
+		</aside>
+
+		<!-- 델리오 홈페이지 -->
+		<a href="https://delio.global/" class="delio_link" :class="{ft_blk : info.curNo === (info.conLen-1)}" target="_blank" noopener noreferrer>Delio Homepage</a>
+
+		<!-- contents -->
+		<div class="container" :style="{top:'-' + info.curNo + '00vh'}">
+			<div class="view_wrap v1" :class="{on: info.curNo===0}">
+				<div class="bgwrap">
+					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===0}" v-for="(list, idx) in info.bg1Urls" :key="idx"></div>
+				</div>
+				<p class="scrolltxt">SCROLL</p>
+				<div class="txtwrap">
+					<p class="title">Delio lounge turns dreams into reality</p>
+					<p class="txt">Providing comfort to visitors, Delio lounge is<br>a complex business space that offers a range of<br>educational and professional counseling services<br>to help you understand digital assets.</p>
+				</div>
+			</div>
+
+			<div class="view_wrap v2" :class="{on: info.curNo===1}">
+				<div class="bgwrap">
+					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===1}" v-for="(list, idx) in info.bg2Urls" :key="idx"></div>
+				</div>
+				<div class="txtarea">
+					<div class="txtwrap">
+						<p class="title">Customer Service</p>
+						<p class="subj">Consultation service for savings<br>and lending products.</p>
+						<p class="txt">It is an innovative customer service that makes it easy to access a variety of services<br>such as savings, lending, and more with Delio. Make an appointment in advance<br>for a 1:1 consultation with an expert. </p>
+					</div>
+					<div class="txtwrap">
+						<p class="cmt">ㆍCustomer consultation is 100% pre-booked and should be booked at least 3 days prior to your visit..</p>
+						<p class="cmt">ㆍWhen requesting an appointment for a consultation, please fill in the required fields.<br>(Name, contact information, Delio account ID, reason for consultation including product name, date and preferred time of consultation, number of visiting customers)</p>
+					</div>
+					<div class="txtwrap flex_ac_jsb">
+						<p class="reser_txt">Request a consultation appointment</p>
+						<div class="reser_info">
+							<a href="tel:02-6951-2776" class="tel">02-6951-2776</a>
+							<a href="mailto:help@delio.io" class="email">help@delio.io</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="view_wrap v3" :class="{on: info.curNo===2}">
+				<div class="bgwrap">
+					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===2}" v-for="(list, idx) in info.bg3Urls" :key="idx"></div>
+				</div>
+				<div class="txtarea">
+					<div class="txtwrap">
+						<p class="title">Educational Programs</p>
+						<p class="subj">Exclusive educational conferences<br>to drive the future of digital assets</p>
+						<p class="txt">Digital assets emerging as a new way of investment.<br>
+							Delio continues to host a variety of training and conferences, making it easy<br>for everyone to understand and experience digital assets.</p>
+					</div>
+					<div class="txtwrap flex_ac_jsb">
+						<p class="p_txt">Program Inquiry</p>
+						<a href="mailto:event@delio.io" class="p_email">event@delio.io</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="view_wrap v4" :class="{on: info.curNo===3}">
+				<div class="bgwrap">
+					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===3}" v-for="(list, idx) in info.bg4Urls" :key="idx"></div>
+				</div>
+				<div class="txtarea top">
+					<p class="title">Rental Info</p>
+					<p class="subj">How to rent Delio lounge</p>
+					<p class="cmt">Delio lounge is open to all.<br>If you want to use the lounge, apply for rent today.</p>
+				</div>
+				<div class="txtarea txts">
+					<div class="txtwrap">
+						<p class="txt">Delio lounge is<br>a paid service.</p>
+						<img src="image/icon_01.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<p class="txt">When applying for rent<br>
+							please fill in the required fields.<br>(Name, contact information,<br>desired date and time for rent,<br>reason for rent, number of visitors)</p>
+						<img src="image/icon_02.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<p class="txt">Admission applications can be<br>made by appointment in<br>advance via email at least<br>2 weeks prior to the event.<br>After booking, the Delio staff<br>will guide you on how to<br>use the space.</p>
+						<img src="image/icon_03.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<p class="txt b">Reservations</p>
+						<a href="mailto:event@delio.io" class="p_email">event@delio.io</a>
+						<img src="image/icon_04.svg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="view_wrap v5" :class="{on: info.curNo===4}">
+				<div class="bgwrap">
+					<div class="bg" :style="'background-image:url('+ list +')'" :class="{on: idx === info.bgNo && info.curNo===4}" v-for="(list, idx) in info.bg5Urls" :key="idx"></div>
+				</div>
+				<div class="txtarea top">
+					<p class="title">Members-Only Services</p>
+					<p class="subj">A special lounge for Delio member</p>
+					<p class="cmt">If you need a place to hold an event, sign up for a Delio membership and use the Delio lounge.<br>The lounge provides free Wi-Fi for wireless connections.</p>
+				</div>
+				<div class="txtarea txts">
+					<div class="txtwrap">
+						<p class="txt">Membership<br>verification is<br>required on your visit.</p>
+						<img src="image/icon_05.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<p class="txt">If the number of<br>visitors exceeds the capacity,<br>the entry might be restricted.</p>
+						<img src="image/icon_06.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<p class="txt b">Inquiry</p>
+						<a href="tel:02-6951-2776" class="txt">02-6951-2776</a>
+						<a href="mailto:help@delio.io" class="p_email">help@delio.io</a>
+						<img src="image/icon_04.svg" alt="">
+					</div>
+					<div class="txtwrap">
+						<a href="https://delio.global/registration" target="_blank" noopener noreferrer class="link">
+							<p class="txt b">Create<br>an account</p>
+							<img src="image/icon_07.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="view_wrap v6" :class="{on: info.curNo===5}">
+				<div class="txtarea">
+					<p class="title">Directions</p>
+					<p class="addr">1st Floor, V&S Building, Samseong-ro 85gil 26,<br>Gangnam-gu, Seoul, South Korea</p>
+				</div>
+				<div class="maparea">
+					<div class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1240490680225!2d127.05503159999999!3d37.5049923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3a0bb2b4b65%3A0x85652c13782c0ead!2sDellio!5e0!3m2!1sen!2skr!4v1664351212471!5m2!1sen!2skr" width="2560" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+				<footer class="footer">
+					<p class="im"><img src="image/delio_logo.svg" alt="delio"></a>
+					<p class="copyright">© Since 2018, Delio. All rights reserved.</p>
+				</footer>
+			</div>
+		</div>
+
+	</main>
+
+	<script src="js/axios.min.js"></script>
+	<script src="js/vue3.min.js"></script>
+	<script src="js/style.js"></script>
+</body>
+
+</html>

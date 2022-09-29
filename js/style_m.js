@@ -63,6 +63,11 @@ const main = {
 		// 언어 바꾸기 관련?
 		const changeLan = (no) => {
 			info.lan = no;// 1: KR,  2: EN
+			if(info.lan ===1) {
+				location.href="lounge_m.html";
+			} else {
+				location.href="lounge_m_en.html";
+			}
 		}
 
 		// 메뉴 선택 시 화면 이동

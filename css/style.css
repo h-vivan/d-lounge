@@ -168,6 +168,58 @@ main{height:100vh;overflow:hidden;}
 .ft_blk .nav .btn_lang+.btn_lang::before{background-color:#1e1e1e;}
 
 
+.en .v1 .txtwrap{bottom:0.6vh;}
+.en .v1.on .txtwrap{bottom:10.6vh;}
+.en .v1 .txtwrap p{font-size:2.2rem;letter-spacing:-1.1px;}
+.en .v1 .txtwrap .txt{margin-top:2.1rem;line-height:3.6rem;}
+
+.en .v2 .title{font-size:2.2rem;letter-spacing:-1.1px;}
+.en .v2 .subj{margin-top:2.2rem;font-size:4rem;letter-spacing:-2px;}
+.en .v2 .txt{margin-top:2.6rem;line-height:3.2rem;font-size:1.6rem;letter-spacing:-0.9px;}
+.en .v2 .cmt{line-height:2.8rem;font-size:1.6rem;letter-spacing:-0.8px;}
+.en .v2 .cmt+.cmt{margin-top:1.2rem;}
+.en .v2 .reser_txt{font-size:1.6rem;letter-spacing:-0.8px;}
+.en .v2 .tel, .en .v2 .email{font-size:1.6rem;letter-spacing:-0.8px;}
+.en .v2 .txtwrap{padding-top:3.8rem;padding-bottom:3.4rem;}
+.en .v2 .txtwrap.flex_ac_jsb{padding-top:3.6rem;padding-bottom:10.8rem;}
+
+.en .v3 .title{font-size:2.2rem;letter-spacing:-1.1px;}
+.en .v3 .subj{margin-top:2.2rem;line-height:4.8rem;font-size:4rem;letter-spacing:-2px;font-family:"Roboto";}
+.en .v3 .txt{margin-top:2.7rem;line-height:3.2rem;font-size:1.6rem;letter-spacing:-0.8px;}
+.en .v3 .txtwrap{padding-bottom:3.3rem;}
+.en .v3 .txtwrap.flex_ac_jsb{padding-top:3.6rem;padding-bottom:11.6rem;padding-right:2rem;}
+.en .v3 .txtwrap.flex_ac_jsb .p_txt{font-size:1.6rem;letter-spacing:-0.8px;font-family:"Noto Sans KR";}
+.en .v3 .txtwrap.flex_ac_jsb .p_email{position:relative;top:0.2rem;font-size:1.6rem;letter-spacing:-0.8px;}
+
+.en .v4 .txtarea.top{bottom:38.3vh;}
+.en .v4.on .txtarea.top{bottom:48.3vh;}
+.en .v4 .txtarea .title{font-size:2.2rem;letter-spacing:-1.1px;}
+.en .v4 .txtarea .subj{margin-top:2rem;font-size:4rem;letter-spacing:-2px;}
+.en .v4 .txtarea .cmt{margin-top:2.7rem;line-height:3.2rem;font-size:1.6rem;letter-spacing:-0.8px;}
+.en .v4 .txtarea.txts{top:calc(100vh - 45.1rem);height:45.1rem;overflow:initial;}
+.en .v4 .txtarea .txtwrap .txt{margin-top:-2.2rem;line-height:3.2rem;font-size:1.6rem;letter-spacing:-0.8px;}
+.en .v4 .txtarea .txtwrap .txt.b{margin-top:-2rem;}
+.en .v4 .txtarea .txtwrap img{top:25.5rem;}
+.en .v4 .txtarea .txtwrap .p_email{margin-top:1.3rem;font-size:1.6rem;letter-spacing:-0.8px;}
+
+.en .v5 .txtarea.top{bottom:38.2vh;}
+.en .v5.on .txtarea.top{bottom:48.2vh;}
+.en .v5 .txtarea .title{font-size:2.2rem;letter-spacing:-1.1px;}
+.en .v5 .txtarea .subj{margin-top:1.3rem;font-size:4rem;letter-spacing:-2px;}
+.en .v5 .txtarea .cmt{line-height:3.2rem;font-size:1.6rem;letter-spacing:-0.8px;font-family:"Noto Sans KR";}
+.en .v5 .txtarea.txts{bottom:20.9vh;}
+.en .v5 .txtarea .txtwrap .txt{line-height:3.2rem;font-size:1.6rem;letter-spacing:-0.8px;}
+.en .v5 .txtarea .txtwrap .txt.b{margin-top:0;}
+.en .v5 .txtarea .txtwrap .txt.b+.txt{margin-top:1.3rem;}
+.en .v5 .txtarea .txtwrap .link .txt.b{margin-top:0.4rem;}
+.en .v5 .txtarea .txtwrap .p_email{font-size:1.6rem;letter-spacing:-0.8px;}
+
+.en .v6 .txtarea{top:17.2vh;}
+.en .v6.on .txtarea{top:27.2vh;}
+.en .v6 .title{font-size:2.2rem;letter-spacing:-1.1px;}
+.en .v6 .addr{margin-top:2rem;line-height:4.8rem;font-size:4rem;font-family:"Noto Sans KR";}
+
+
 @media screen and (min-height:841px) and (max-height:970px){
 	html{font-size:8.6px;}
 }
@@ -238,4 +290,59 @@ main{height:100vh;overflow:hidden;}
 	.v6 .footer .copyright{margin-top:0.7rem;}
 	.delio_link.ft_blk{bottom:-1px;z-index:999;}
 	.v6.on .txtarea{top:32vh;}
+
+
+	.en .v1 .txtwrap{bottom:2vh;}
+	.en .v1.on .txtwrap{bottom:12vh;}
+	.en .v1 .txtwrap p{font-size:1.8rem;letter-spacing:-0.9px;}
+	.en .v1 .txtwrap .txt{margin-top:1.3rem;line-height:2.8rem;}
+
+	.en .v2 .title{font-size:1.8rem;letter-spacing:-0.9px;}
+	.en .v2 .subj{margin-top:0.9rem;line-height:3.6rem;font-size:2.8rem;letter-spacing:-1.4px;}
+	.en .v2 .txt{margin-top:1.8rem;line-height:2rem;font-size:1.2rem;letter-spacing:-0.6px;}
+	.en .v2 .txtwrap{padding-top:0;padding-bottom:2.2rem;}
+	.en .v2 .txtwrap+.txtwrap{padding-top:2.4rem;}
+	.en .v2 .reser_txt{font-size:1.4rem;letter-spacing:-0.7px;font-family:"Noto Sans KR";}
+	.en .v2 .tel, .en .v2 .email{position:relative;top:1px;font-size:1.2rem;letter-spacing:-0.6px;}
+	.en .v2 .email{margin-left:0.4rem;padding-left:0.4rem;}
+	.en .v2 .email::before{top:1.1rem;height:0.9rem;}
+	.en .v2 .cmt{line-height:1.8rem;font-size:1.2rem;letter-spacing:-0.6px;font-family:"Noto Sans KR";}
+	.en .v2 .cmt+.cmt{}
+	.en .v2 .txtwrap.flex_ac_jsb{padding-top:1.8rem;padding-bottom:8.4rem;padding-right:1.1rem;}
+
+	.en .v3 .title{font-size:1.8rem;letter-spacing:-0.9px;font-family:"Noto Sans KR";}
+	.en .v3 .subj{margin-top:1.2rem;line-height:3.6rem;font-size:2.8rem;letter-spacing:-1.4px;font-family:"Noto Sans KR";}
+	.en .v3 .txt{margin-top:2.1rem;line-height:2rem;font-size:1.2rem;letter-spacing:-0.6px;font-family:"Noto Sans KR";}
+	.en .v3 .txtwrap{padding-bottom:2.2rem;}
+	.en .v3 .txtwrap.flex_ac_jsb{padding-top:1.7rem;padding-bottom:8.2rem;padding-right:7.6rem;}
+	.en .v3 .txtwrap.flex_ac_jsb .p_txt{font-size:1.2rem;letter-spacing:-0.3px;font-weight:500;}
+	.en .v3 .txtwrap.flex_ac_jsb .p_email{font-size:1.2rem;letter-spacing:-0.6px;}
+
+	.en .v4 .txtarea.top{bottom:39.4vh;}
+	.en .v4.on .txtarea.top{bottom:49.4vh;}
+	.en .v4 .txtarea .title{font-size:1.8rem;letter-spacing:-0.9px;font-family:"Noto Sans KR";}
+	.en .v4 .txtarea .subj{margin-top:0.3rem;font-size:2.8rem;letter-spacing:-1.4px;font-family:"Noto Sans KR";}
+	.en .v4 .txtarea .cmt{margin-top:1.5rem;line-height:2rem;font-size:1.2rem;letter-spacing:-0.6px;font-family:"Noto Sans KR";}
+	.en .v4 .txtarea.txts{top:calc(100vh - 30.8rem);height:30.8rem;}
+	.en .v4 .txtarea .txtwrap .txt{margin-top:-0.1rem;line-height:2rem;font-size:1.2rem;letter-spacing:-0.6px;font-family:"Noto Sans KR";}
+	.en .v4 .txtarea .txtwrap .p_email{margin-top:0.7rem;font-size:1.2rem;letter-spacing: -0.6px;}
+	.en .v4 .txtarea .txtwrap img{top:15.8rem;}
+	.en .v4 .txtarea .txtwrap .txt.b{padding-top:1.9rem;font-weight:500;}
+
+	.en .v5 .txtarea.top{bottom:39.4vh;}
+	.en .v5.on .txtarea.top{bottom:49.4vh;}
+	.en .v5 .txtarea .title{font-size:1.8rem;letter-spacing:-0.9px;font-family:"Noto Sans KR";}
+	.en .v5 .txtarea .subj{margin-top:0.6rem;font-size:2.8rem;letter-spacing:-1.4px;font-family:"Noto Sans KR";}
+	.en .v5 .txtarea .cmt{margin-top:1.8rem;line-height:2rem;font-size:1.2rem;letter-spacing:-0.6px;font-family:"Noto Sans KR";}
+	.en .v5 .txtarea .txtwrap .txt{line-height:2rem;font-size:1.2rem;letter-spacing:-0.6px;font-family:"Noto Sans KR";}
+	.en .v5 .txtarea .txtwrap .txt.b+.txt{margin-top:0.7rem;letter-spacing:-0.6px;font-family:"Roboto";}
+	.en .v5 .txtarea .txtwrap .p_email{margin-top:0.2rem;font-size:1.2rem;letter-spacing:-0.6px;}
+	.en .v5 .txtarea .txtwrap .link .txt.b{}
+	.en .v5 .txtarea.txts{bottom:17.1vh;}
+	.en .v5 .txtarea .txtwrap{padding-top:3.4rem;}
+
+	.en .v6 .txtarea{top:23.4vh;}
+	.en .v6.on .txtarea{top:33.4vh;}
+	.en .v6 .title{font-size:1.8rem;letter-spacing:-0.9px;font-family:"Noto Sans KR";}
+	.en .v6 .addr{margin-top:0.9rem;line-height:3.6rem;font-size:2.8rem;}
 }
